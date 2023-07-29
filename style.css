@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Banner-Site */
+.home{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px 75px 100px ;
+
+}
+.home-content h1{
+    width: 485px;
+    height: 230px;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+.home-img img{
+    width: 556.01px;
+    height: 438px;
+}
+.link-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.link-button:hover{
+    background-color: #555;
+}
+/* Banner Site End */
+
+/* Player Site Start */
+.container{
+    padding: 45px 50px 75px 100px ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 30px;
+}
+.container img{
+    width: 300px;
+    height: 256px;
+}
+.player-name{
+    font-size: 28px;
+    margin-top: 2px;
+}
+.player-details{
+    color: #7B7979;
+}
+.collumns{
+    width: 316px;
+    height: 474px;
+    box-shadow: 2px 2px 4px #555;
+}
+.collumn{
+    padding: 8px 8px 8px 8px;
+    align-items: center;
+}
+/* Player Part End */
+
+/* Footer Part Start */
+footer{
+    text-align: center;
+}
+footer img{
+    width: 483.87px;
+    height: 110px;
+}
+.fa-brands{
+    font-size: 25px;
+    color: blue;
+}
+.fa-brands:hover{
+    cursor: pointer;
+    color: #969BAB;
+}
+/* Footer Part End */
+
+/* Media Queries */
+/* Mobile Device */
+@media only screen and (max-width:688px){
+    .home{
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-img img{
+        width: 329px;
+        margin-top: 4rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        padding: 22px;
+        justify-content: center;
+    }
+    footer img {
+        max-width: 220px;
+    }
+
+    footer div {
+        margin: 5px 0; 
+    }
+
+    footer a {
+        margin: 0 3px;
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 14px; 
+    }
+}
